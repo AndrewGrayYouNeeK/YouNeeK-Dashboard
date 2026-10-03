@@ -1,0 +1,92 @@
+.sidebar {
+  width: 240px;
+  background: #161b22;
+  border-right: 1px solid #21262d;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 1.5rem 1.5rem;
+  border-bottom: 1px solid #21262d;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem 0.75rem;
+  flex: 1;
+}
+
+.nav button {
+  background: none;
+  border: none;
+  color: #8b949e;
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav button:hover {
+  background: #21262d;
+  color: #e5e7eb;
+}
+
+.nav button.active {
+  background: #21262d;
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+.footer {
+  padding: 0 1.5rem;
+}
+
+.version {
+  font-size: 0.75rem;
+  color: #484f58;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #21262d;
+    padding: 1rem 0;
+  }
+
+  .nav {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .footer {
+    display: none;
+  }
+}
